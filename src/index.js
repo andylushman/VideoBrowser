@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import SearchBar from './components/SearchBar';
 import YTSearch from 'youtube-api-search';
 import VideoList from './components/VideoList';
-import VideoDetail from './components/VideoList';
+import VideoDetail from './components/VideoDetail';
 const APIKey = 'AIzaSyBSRMoi4_1RfGXt1bVQXfxHqYXSz4HdrE4';
 
 class App extends Component {
@@ -11,11 +11,15 @@ class App extends Component {
     super(props);
 
     this.state = {
-      videos: []
+      videos: [],
+      selectedVideo: null
     };
 
     YTSearch({ key: APIKey, term: 'Mountain Biking' }, videos => {
-      this.setState({ videos });
+      this.setState({
+        videos: videos,
+        selectedVideo: videos[0]
+      });
       //this.setState({videos: videos});
     });
   }
@@ -24,7 +28,11 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
-        <VideoList videos={this.state.videos} />
+        <VideoDetail video={this.state.selectedVideo} />
+        <VideoList
+          onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
+          videos={this.state.videos}
+        />
       </div>
     );
   }
