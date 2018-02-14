@@ -51,4 +51,4 @@ export default App;
 //Questions
 //1. Why two css files? Index.css and App.css..
 //2. How does npm start server on port 3000?
-//3. Why not always create a class insead of functional components and class components
+//3. Why not always create a class component insead of functional components?
