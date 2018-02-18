@@ -49,6 +49,6 @@ class App extends Component {
 export default App;
 
 //Questions
-//1. Why two css files? Index.css and App.css..
-//2. How does npm start server on port 3000?
-//3. Why not always create a class component insead of functional components?
+//1. Why not always create a class component insead of functional components?
+//2. Why two css files? Index.css and App.css..
+//3. How does npm start server on port 3000?
