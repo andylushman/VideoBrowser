@@ -53,3 +53,7 @@ export default App;
 //3. Best practice for setting up css in React? One file or one file per component?
 //4. How does npm start server on port 3000?
 //5. Recommend any software for conceptualizing components/apps? Instead of Word.
+
+//Google Draw
+//Keynote
+//Lucid Chart
