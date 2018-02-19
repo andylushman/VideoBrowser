@@ -50,5 +50,6 @@ export default App;
 //Questions
 //1. Why not always create a class component insead of functional components?
 //2. Why two css files? Index.css and App.css..
-//3. How does npm start server on port 3000?
-//4. Recommend any software for conceptualizing components/apps? Instead of Word.
+//3. Best practice for setting up css in React? One file or one file per component?
+//4. How does npm start server on port 3000?
+//5. Recommend any software for conceptualizing components/apps? Instead of Word.
